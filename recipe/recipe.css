@@ -1,0 +1,59 @@
+
+h1{
+    color: #A4A400;
+    background-color: #F0F0F0;
+    font-family:  'Lucida Sans Unicode', Helvetica, Arial, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 22pt;
+    text-decoration: underline;
+}
+h2{
+    color: #A4A400;
+    background-color: #F0F0F0;
+    font-size: 18pt;
+    text-decoration: underline;
+}
+body{
+    background-image: url("images/silverware.jpg");
+    max-width: 1024px;
+    margin: auto;
+    font-family: Georgia, Garamond, serif;
+    color: #404040;
+}
+a{
+    color: #A4A400 ;
+}
+.quotation{ 
+    background-color: #FFFFA8;
+}
+ul li{
+    list-style-image: url("images/pie_icon.gif");
+}
+/* .ingredientlist .tooltip .tbsp{
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  } */
+  
+  .ingredientlist .tooltip .word .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+
+  .ingredientlist .tooltip .word:hover .tooltiptext {
+    visibility: visible;
+  }
+
+ #pie{
+     text-align: center;
+ } 
