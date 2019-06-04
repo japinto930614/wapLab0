@@ -13,25 +13,29 @@ window.onload = function () {
     let play;
     let isPlaying = false;
     let sizeoption = document.getElementById("sizeoption");
-    let speed
-    document.getElementById("startbutton").onclick = function () {
+    let startbutton = document.getElementById("startbutton");
+    let stopbutton = document.getElementById("stopbutton");
+    let speed = 250;
+   
+
+    startbutton.onclick = function () {
         if (!isPlaying) {
             animation = document.getElementById("animationoption").value;
             if (animation != "") {
-                play = setInterval(function () { putText(animation); }, 250);
+                play = setInterval(function () { putText(animation); }, speed);
+                startbutton.disabled = true;
+                stopbutton.disabled = false;
                 isPlaying = true;
             }
         }
     };
-
     document.getElementById("stopbutton").onclick = function () {
         clearInterval(play);
+        startbutton.disabled = false;
+        stopbutton.disabled = true;
         isPlaying = false;
     }
-
     sizeoption.onchange = function () {
         let textbox = document.getElementById("textbox").style.fontSize = sizeoption.value;
     }
-
-
 }
