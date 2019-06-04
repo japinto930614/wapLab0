@@ -25,4 +25,8 @@ textarea{
 fieldset{
     border-width: 5px;
     border-color: black;
+    display: inline;
+}
+#controlbox{
+    display: inline;
 }
