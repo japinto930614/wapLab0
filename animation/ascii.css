@@ -22,3 +22,7 @@ textarea{
     font-size: 12pt;
     margin: auto;
 }
+fieldset{
+    border-width: 5px;
+    border-color: black;
+}
