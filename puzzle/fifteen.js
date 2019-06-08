@@ -19,7 +19,7 @@ $(document).ready(function () {
             div.id = i;
             div.style.left = x + 'px';
             div.style.top = y + 'px';
-            div.style.backgroundImage = 'url("background.jpg")';
+            div.style.backgroundImage = 'url("http://mumstudents.org/cs472/2019-06-RS/Homework/9puzzle/resources/background.jpg")';
             div.style.backgroundPosition = -x + 'px ' + (-y) + 'px';
             // store x and y for later
             div.x = x;
@@ -27,7 +27,7 @@ $(document).ready(function () {
         }
     };
     init();
-
+// shuffles all the pieces in a random order
     $("#shufflebutton").click(function () {
         let divs = $(".puzzlepiece");
         var numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
@@ -65,10 +65,9 @@ $(document).ready(function () {
             }
         }
     });
-
+// moves the piece as soon is clicked
     $("#puzzlearea div").click(function () {
         let blankspace = currentOrder.indexOf(null);
-        // alert(blankspace);
         let nearbyPieces = [null, null, null, null];
         let index = 0;
         if (blankspace > 3) {
@@ -88,9 +87,9 @@ $(document).ready(function () {
             nearbyPieces[3] = currentOrder[left];
         }
         let divId = parseInt(this.id);
+        //verifies if the piece can be moved
         if (nearbyPieces.includes(divId)) {
             let PiecePosition = nearbyPieces.indexOf(divId);
-            // alert(PiecePosition);
             currentOrder[blankspace] = divId;
             let y = parseInt(this.style.top);
             let x = parseInt(this.style.left);
@@ -119,7 +118,6 @@ $(document).ready(function () {
                     break;
                 default:
             }
-            // alert(this.id);
         }
     });
 });
