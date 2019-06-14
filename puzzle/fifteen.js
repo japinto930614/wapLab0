@@ -19,7 +19,7 @@ $(document).ready(function () {
             div.id = i;
             div.style.left = x + 'px';
             div.style.top = y + 'px';
-            div.style.backgroundImage = 'url("https://scontent-lht6-1.cdninstagram.com/vp/aed4e120a2bd957c84d98f65d2f6823f/5D7BC926/t51.2885-19/s150x150/14719202_1768785320028358_2044085312530939904_a.jpg?_nc_ht=scontent-lht6-1.cdninstagram.com&se=")';
+            div.style.backgroundImage = 'url("https://i.imgur.com/Lvv0Zru.jpg")';
             div.style.backgroundPosition = -x + 'px ' + (-y) + 'px';
             // store x and y for later
             div.x = x;
