@@ -11,6 +11,7 @@
     <title>$Title$</title>
   </head>
   <body>
-  $END$
+  <a href='views/login.jsp'>Log in</a>
+  <a href='SignUp'>Sign up</a>
   </body>
 </html>

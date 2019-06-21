@@ -1,22 +1,53 @@
 package model;
 
 public class Product {
-    private String productName;
-    private double price;
+    private int id;
+    private String name;
+    private String price;
 
-    public String getProductName() {
-        return productName;
+    public Product() {
+        super();
+
     }
 
-    public void setProductName(String productName) {
-        this.productName = productName;
+
+    public Product(int id, String name, String price) {
+        super();
+        this.id = id;
+        this.name = name;
+        this.price = price;
     }
 
-    public double getPrice() {
+
+    public Product(String name, String price) {
+        super();
+        this.name = name;
+        this.price = price;
+    }
+
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getPrice() {
         return price;
     }
 
-    public void setPrice(double price) {
+    public void setPrice(String price) {
         this.price = price;
     }
+
 }
